@@ -1,0 +1,14 @@
+{
+  "name": "parse",
+  "_cacheHeaders": {
+    "ETag": "\"5327312a-157ac\"",
+    "Last-Modified": "Mon, 17 Mar 2014 17:30:18 GMT",
+    "Content-Length": "87980",
+    "Content-Type": "application/x-javascript; charset=utf-8"
+  },
+  "_release": "e-tag:5327312a-",
+  "main": "index.js",
+  "_source": "https://parse.com/downloads/javascript/parse-1.2.18.min.js",
+  "_target": "*",
+  "_originalSource": "https://parse.com/downloads/javascript/parse-1.2.18.min.js"
+}

@@ -3,12 +3,16 @@ To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title></title>
+        <title>Gavin Wu's Baby Girl</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="a/libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="a/libs/onepage-scroll/onepage-scroll.css" rel="stylesheet">
     </head>
     <body>
-        <div>My Baby Photos...</div>
+        <header ng-controller="MenuController" ng-bind-html="snippet" ></header>
+        <div data-ng-view ></div>
+        <script data-main="a/js/config.js" src="a/libs/requirejs/require.js"></script>
     </body>
 </html>

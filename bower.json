@@ -1,0 +1,28 @@
+{
+  "name": "babyphotos",
+  "version": "0.0.1",
+  "homepage": "https://github.com/wubenhe/babyphotos",
+  "authors": [
+    "Ben Wu <ben@chegg.com>"
+  ],
+  "description": "for my baby photos",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "a/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "angular": "1.2.16",
+    "parse": "https://parse.com/downloads/javascript/parse-1.2.18.min.js",
+    "masonry": "~3.1.5",
+    "requirejs": "~2.1.11",
+    "angular-route": "~1.2.16",
+    "handlebars": "v2.0.0-alpha.2",
+    "onepage-scroll": "~1.1.1"
+  }
+}

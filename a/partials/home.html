@@ -1,0 +1,11 @@
+<style>
+    .main section > img{
+        width: 100%;
+    }
+</style>
+<div class="main"  >
+    <section app-page-scroll ng-repeat="image in images">
+        <img ng-if="$first" ng-src="http://farm{{image.farm}}.staticflickr.com/{{image.server}}/{{image.picture_id}}_{{image.secret}}_c.jpg" />
+        <input ng-if="!$first" type="hidden" value="http://farm{{image.farm}}.staticflickr.com/{{image.server}}/{{image.picture_id}}_{{image.secret}}_c.jpg" />
+    </section>
+</div>
