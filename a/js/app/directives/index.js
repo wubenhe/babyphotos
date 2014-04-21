@@ -4,4 +4,4 @@
  */
 
 
-define(['./app-page-scroll'], function () {});
+define(['./app-page-scroll', './app-masonry-img'], function () {});
