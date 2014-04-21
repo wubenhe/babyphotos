@@ -1,11 +1,27 @@
 <style>
-    .main section > img{
+    .main section > img.cover{
         width: 100%;
+    }
+    .main section.albums{
+        background: white;
+        
+    }
+    .main section.albums #masonry-container{
+        width: 1400px;
+        margin: 44px auto;
+    }
+    .main section.albums img.item{
+        padding: 10px 5px;
     }
 </style>
 <div class="main"  >
     <section app-page-scroll ng-repeat="image in images">
-        <img ng-if="$first" ng-src="http://farm{{image.farm}}.staticflickr.com/{{image.server}}/{{image.picture_id}}_{{image.secret}}_c.jpg" />
+        <img class="cover" ng-if="$first" ng-src="http://farm{{image.farm}}.staticflickr.com/{{image.server}}/{{image.picture_id}}_{{image.secret}}_c.jpg" />
         <input ng-if="!$first" type="hidden" value="http://farm{{image.farm}}.staticflickr.com/{{image.server}}/{{image.picture_id}}_{{image.secret}}_c.jpg" />
+    </section>
+    <section app-page-scroll  class="albums">
+        <div id="masonry-container">
+            <img app-masonry-img ng-repeat="album in albums" class="item" ng-src="http://farm{{album.farm}}.staticflickr.com/{{album.server}}/{{album.picture_id}}_{{album.secret}}_m.jpg" />
+        </div>
     </section>
 </div>

@@ -18,7 +18,7 @@ define(['./module', "onepage-scroll"], function(directives) {
                         var $next_el = $('.main section:eq(' + index + ')');
                         var $input = $next_el.find('input');
                         if ($input.length > 0) {
-                            var $image = $('<img />', {'src': $input.val()});
+                            var $image = $('<img />', {'src': $input.val(), 'class':'cover'});
                             $next_el.append($image);
                             $input.remove();
                         }

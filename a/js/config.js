@@ -15,9 +15,14 @@ requirejs.config({
        'jquery':'jquery/dist/jquery', 
        'handlebars.runtime':'handlebars/handlebars.runtime.amd', 
        'onepage-scroll':'onepage-scroll/jquery.onepage-scroll', 
-       'parse':'parse/index'
+       'parse':'parse/index', 
+       'masonry':'masonry/dist/masonry.pkgd'
    }, 
    shim:{
+       'masonry':{
+         exports:'Masonry', 
+         deps:['jquery']
+       },
        'angular':{
            exports:'angular'
        }, 
